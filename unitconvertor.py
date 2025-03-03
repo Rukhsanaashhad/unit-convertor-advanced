@@ -1,6 +1,6 @@
 import streamlit as st  
 
-# Conversion functions  
+# Conversion functions
 def length_converter(value, from_unit, to_unit):  
     units = {  
         'meters': 1,  
@@ -40,7 +40,7 @@ def temperature_converter(value, from_unit, to_unit):
         return value  
 
 # Streamlit UI  
-st.title("Unit Converter")  
+st.title("Unit Converter  By Muhammad Ashhad Khan")  
 
 # Select the type of conversion  
 conversion_type = st.selectbox("Select conversion type", ["Length", "Weight", "Temperature"])  
@@ -68,4 +68,4 @@ elif conversion_type == "Temperature":
     to_unit = st.selectbox("To unit", ['Celsius', 'Fahrenheit', 'Kelvin'])  
     if st.button("Convert"):  
         result = temperature_converter(value, from_unit, to_unit)  
-        st.write(f"{value} {from_unit} is equal to {result} {to_unit}")  
+        st.header(f"{value} {from_unit} is equal to {result} {to_unit}")  
