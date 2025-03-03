@@ -54,18 +54,18 @@ if conversion_type == "Length":
     to_unit = st.selectbox("To unit", ['meters', 'kilometers', 'miles', 'feet'])  
     if st.button("Convert"):  
         result = length_converter(value, from_unit, to_unit)  
-        st.write(f"{value} {from_unit} is equal to {result} {to_unit}")  
+        st.header(f"{value} {from_unit} is equal to {result} {to_unit} 📏")  
 
 elif conversion_type == "Weight":  
     from_unit = st.selectbox("From unit", ['grams', 'kilograms', 'pounds', 'ounces'])  
     to_unit = st.selectbox("To unit", ['grams', 'kilograms', 'pounds', 'ounces'])  
     if st.button("Convert"):  
         result = weight_converter(value, from_unit, to_unit)  
-        st.write(f"{value} {from_unit} is equal to {result} {to_unit}")  
+        st.header(f"{value} {from_unit} is equal to {result} {to_unit} ⚖️")  
 
 elif conversion_type == "Temperature":  
     from_unit = st.selectbox("From unit", ['Celsius', 'Fahrenheit', 'Kelvin'])  
     to_unit = st.selectbox("To unit", ['Celsius', 'Fahrenheit', 'Kelvin'])  
     if st.button("Convert"):  
         result = temperature_converter(value, from_unit, to_unit)  
-        st.header(f"{value} {from_unit} is equal to {result} {to_unit}")  
+        st.header(f"{value} {from_unit} is equal to {result} {to_unit} 🌡️")  
